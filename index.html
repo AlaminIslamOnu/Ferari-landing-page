@@ -1,34 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/386c3b54d5.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- tailwind and daisy ui  -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
- 
-</head>
-<body>
-   <header>
-         <nav>
-            
-         </nav>
+  </head>
+  <body
+    class="min-h-screen bg-gradient-to-r from-gray-900 to-[#a58658] text-white"
+  >
+    <header>
+      <nav class="navbar shadow-sm p-4">
+        <div class="container mx-auto flex justify-between items-center">
+          <div class="flex items-center ml-40">
+            <img class="w-10" src="https://upload.wikimedia.org/wikipedia/en/3/36/Prancing_horse.svg" alt="">
+            <a class="btn btn-ghost text-xl ml-2">Ferari</a>
+            <a class="btn btn-ghost text-xl">API</a>
+            <a class="btn btn-ghost text-xl">Company</a>
+            <a class="btn btn-ghost text-xl">Colossus</a>
+            <a class="btn btn-ghost text-xl">News</a>
+          </div>
 
-   </header>
+          
+         
+
+          <button class="btn rounded-md mr-4 hidden md:block">
+            Try Ferari
+          </button>
+        </div>
+
+        <div
+          id="mobile-menu"
+          class="hidden md:hidden flex flex-col items-center space-y-2 p-4 bg-gray-100"
+        >
+          <a class="btn btn-ghost text-xl">API</a>
+          <a class="btn btn-ghost text-xl">Company</a>
+          <a class="btn btn-ghost text-xl">Colossus</a>
+          <a class="btn btn-ghost text-xl">News</a>
+          <button class="btn rounded-md">Try Ferari</button>
+        </div>
+      </nav>
+    </header>
     <main>
+      <div class="flex justify-center items-center relative">
+        <img
+          src="https://www.pngplay.com/wp-content/uploads/13/Ferrari-Logo-Background-PNG-Image.png"
+          alt=""
+        />
 
+        <!-- input section -->
+        <section
+          class="flex justify-center absolute bottom-[-50px] right-[645px] items-center"
+        >
+          <div class="join">
+            <div>
+              <div>
+                <input
+                  class="input join-item"
+                  placeholder="Ask Ferari Everything"
+                />
+              </div>
+            </div>
 
+            <div class="indicator">
+              <button class="btn join-item">Search</button>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
-   <footer>
 
-
-
-
-   </footer>
-
-
-
-
-</body>
+    <footer
+      class="footer sm:footer-horizontal bg-neutral text-neutral-content p-14 mt-52"
+    >
+      <div>
+        <i class="fa-solid fa-arrow-down"></i>
+      </div>
+      <div>
+        <p class="ml-36">
+          We are thrilled to unveil Grok 3, our most advanced model yet, <br />
+          blending superior reasoning with extensive pretraining knowledge.
+        </p>
+      </div>
+      <div class="flex">
+        <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">
+          Build with Ferari
+        </button>
+        <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">
+          Learn more
+        </button>
+      </div>
+    </footer>
+  </body>
 </html>
